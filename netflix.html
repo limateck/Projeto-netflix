@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./estilo-css/estilos.css">
+
+    <style>
+
+    </style>
+    <title>Netflix</title>
+</head>
+
+<body onkeyup=toglleEmailErrors(),togllePasswordErrors(),toglleEmailErrors(),togleEmailInvalid()>
+    <div>
+
+
+
+        <a href="https://www.netflix.com/br/"><img class="logonetflix" src="./img/netflix.svg" alt=""></a>
+
+
+        <div class="form">
+            <br>
+
+            <h1>Entrar</h1>
+            <br>
+            <div class="label-login">
+
+                <input type="text" data-uia="login" name="email" placeholder="" class="id-user" id="email" required
+                    value="" tabindex="0" autocomplete="off" dir="" onchange="validateFields(),togleEmailInvalid()"
+                    onkeyup="">
+
+                </label>
+
+                <label for="email" class="Labelemail">Email ou número de telefone</label>
+                <div id="email_id" class="inputError">Informe um email ou número de telefone válido.
+                </div>
+                <div id="email_invalid" class="inputError">Informe um email válido.</div>
+
+                <div class="label-senha">
+
+
+
+                    <input type="password" name="usuario" placeholder="" class="senha" id="id_password"
+                        onchange="validateFields()" required value="" tabindex="0" dir="">
+
+
+                    <label for="id_password" class="Labelsenha">Senha</label>
+
+
+                </div>
+
+                <div id="senha_id" class="inputErro">A senha deve ter entre 4 e 60 caracteres.
+                </div>
+
+
+
+                <button type="submit" class="botão" disabled="true" id="botao-entrar">Entrar</button>
+                <br>
+            </div>
+            <div>
+
+                <label for="">
+                    <input class="box" type="checkbox" name="lembre-se de mim" id="marcacao" value="true" tabindex="0"
+                        data-uia="rememberMe"></label>
+                <span class="lembrar">Lembre-se de mim</span>
+                <label for="">
+                    <span class="ajuda"><a href="https://www.netflix.com/br/LoginHelp" target="_self">Precisa de
+                            ajuda?</a></span>
+
+                    <span>
+                        <div class="facebook_id">
+                            <br>
+                            <img class="icone" src="./img/FB-f-Logo__blue_57.png" alt="">
+                            <div class="facebook">&nbsp;Conectar com Facebook</div>
+                            <div>
+                                <p class="novo">Novo por aqui? <a class="ass" href="">Assine agora.</a></p>
+                            </div>
+                            <span id="secaorodape">
+                                Esta página é protegida pelo Google reCAPTCHA para garantir que você
+                                não
+                                é
+                                um robô. <buttom onclick="caption()" id class="bot">Saiba
+                                    mais.</buttom>
+                                </id=>
+                            </span>
+                            <span id="caption">As informações recolhidas pelo Google reCAPTCHA estão sujeitas à
+                                Política de
+                                Privacidade e
+                                Termos de Uso, e são usadas
+                                para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não
+                                são
+                                usadas para exibir anúncios
+                                personalizados pelo Google).</span>
+
+                        </div>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+
+        <footer class="baixo">
+            <span class="rodape">
+                <p class="duvidas">Dúvidas? Ligue <a class="tel" href="">0800-761-4631</p></a>
+
+
+                <div id="inrodape">
+                    <ol class="perguntas">
+                        <a href="https://help.netflix.com/pt/node/412">
+                            <li class="perguntas">Perguntas frequentes</li>
+                        </a>
+                        <li class="centro">Preferências de cookies</li>
+                    </ol>
+
+                    </a>
+                </div>
+                <div class="inrodape3">
+                    <a href="https://help.netflix.com/legal/termsofuse">
+                        <li class="perguntas">Termos de uso</li>
+                    </a>
+                </div>
+                <div class="inrodape4">
+                    <a href="https://help.netflix.com/legal/privacy"></a>
+                    <li class="privacidade">Privacidade</li>
+                    <a href="https://help.netflix.com/pt/">
+                </div>
+
+                <div class="inrodape2">
+                    <li class="perguntas">Centro de ajuda</li>
+                    </a>
+                    <a href="https://help.netflix.com/legal/corpinfo">
+                        <li class="centro">Informações corporativas</li>
+                    </a>
+                </div>
+
+
+            </span>
+
+            <img class="mundo" src="./logo-mundo.png.png" alt="">
+
+            <span>
+                <select id="seletor" onchange="location.href=this.value">
+                    <hgroup>
+                        <option value="https://www.netflix.com/br/">Portugês</option>
+                        <option value="https://www.netflix.com/br-en/">English</option>
+
+                    </hgroup>
+                </select>
+            </span>
+        </footer>
+
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>
